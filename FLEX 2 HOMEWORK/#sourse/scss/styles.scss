@@ -72,8 +72,6 @@ body{
     padding: 0px 0px 0px 36px;
 }
 
-.main {
-}
 .top {
 
 		&__row {
@@ -160,6 +158,7 @@ body{
 .bottom {
 
 		&__title {
+			margin-bottom: 14px;
 		}
 
 		&__container {
@@ -179,20 +178,11 @@ body{
 			flex-direction: column;
 			background-color: #425062;
 			width: 300px;
+			border: solid 2px #445162;
+			border-radius: 4px;
 		}
 }
-.bottom__columm p{
-	flex: 1 0 auto;
-	font-size: 14px;
-	line-height: 1.71;
-	color: #fff;
-}
-// .bottom__columms div:nth-child(1){
-// 	margin-right: 45px;
-// }
-// .bottom__columms div:nth-child(2){
-// 	margin-right: 45px;
-// }
+
 .columm {
 
 		&__title {
@@ -201,6 +191,7 @@ body{
 			text-align: center;
 			color: #fff;
 			background-color: #425062;
+			padding: 18px 0px 12px 0px;
 		}
 
 		&__subtitle {
@@ -209,7 +200,15 @@ body{
 			line-height: 0.75;
 			text-align: center;
 			color: #445162;
-			border: 2px solid #425062;
+			padding: 25px 0px 19px 0px;
+		}
+
+		&__text{
+			flex: 1 0 auto;
+			font-size: 14px;
+			line-height: 1.71;
+			color: #fff;
+			padding: 19px 30px 3px 20px;
 		}
 
 		&__btn {
@@ -219,10 +218,17 @@ body{
 			line-height: 1;
 			text-align: center;
 			color: #445161;
+			padding: 15px 0px 13px 0px;
+			max-width: 260px;
+			margin: 20px;
 		}
+}
+.columm__text p:first-child{
+	margin-bottom: 20px;
 }
 // ----------------------------------------------footer-----------------------------------
 .footer {
+	margin-top: 50px;
 	background-color: #F5F5F5;
 	padding: 31px 0;
 		&__row {
